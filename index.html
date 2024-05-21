@@ -13,7 +13,7 @@
     <script>
       var map = L.map('map', {attributionControl: false}).setView([37.753, -122.434], 11);
       L.control.attribution({prefix: false}).addTo(map);
-      var tilesource_layer = L.tileLayer('https://github.com/samjaros-stanford/SF-model-tiles/blob/1e7987c5f5fff0465b2440be28f36d1296d9993e/{z}/{x}/{y}.png', 
+      var tilesource_layer = L.tileLayer('https://github.com/samjaros-stanford/SF-model-tiles/blob/1e7987c5f5fff0465b2440be28f36d1296d9993e/{z}/{x}/{y}.png?raw=true', 
                                          {minZoom: 7, maxZoom: 15, tms: false, attribution: 'Created by QGIS'})
         .addTo(map);
     </script>
